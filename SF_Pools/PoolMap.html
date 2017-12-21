@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_15d3ca5205e945d99c7beaa65ce09ffe {
+                position : relative;
+                width : 600.0px;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_15d3ca5205e945d99c7beaa65ce09ffe" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_15d3ca5205e945d99c7beaa65ce09ffe = L.map(
+                                  'map_15d3ca5205e945d99c7beaa65ce09ffe',
+                                  {center: [37.76,-122.45],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_c61160624a8048838dbff38493b06f9b = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+        
+    
+
+            var marker_065c336fbe344f19ad4978c4040e07b2 = L.marker(
+                [37.777135,-122.454494],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_43e3ca02126444d7af22a067dc5466eb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_065c336fbe344f19ad4978c4040e07b2.setIcon(icon_43e3ca02126444d7af22a067dc5466eb);
+            
+    
+            var popup_57b2531c20a8412c87330873fb3bc7b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_cf06e6aa157a429db6b67dbaad46e315 = $('<div id="html_cf06e6aa157a429db6b67dbaad46e315" style="width: 100.0%; height: 100.0%;">USF Koret Health & Recreation<br><a href="https://www.usfca.edu/koret/aquatics">URL</a><br></div>')[0];
+                popup_57b2531c20a8412c87330873fb3bc7b5.setContent(html_cf06e6aa157a429db6b67dbaad46e315);
+            
+
+            marker_065c336fbe344f19ad4978c4040e07b2.bindPopup(popup_57b2531c20a8412c87330873fb3bc7b5);
+
+            
+        
+    
+
+            var marker_37c95813873d497493537a2fe3016dfe = L.marker(
+                [37.768534,-122.393288],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_15e2fb2af54646d8a60adc2c6438124a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_37c95813873d497493537a2fe3016dfe.setIcon(icon_15e2fb2af54646d8a60adc2c6438124a);
+            
+    
+            var popup_30327371324d4c36967cb8c4d6d35d37 = L.popup({maxWidth: '300'});
+
+            
+                var html_0509d6b066014546a6b16069c179cdb1 = $('<div id="html_0509d6b066014546a6b16069c179cdb1" style="width: 100.0%; height: 100.0%;">UCSF Baker Rec Center<br><a href="https://campuslifeservices.ucsf.edu/fitnessrecreation/services/schedules">URL</a><br></div>')[0];
+                popup_30327371324d4c36967cb8c4d6d35d37.setContent(html_0509d6b066014546a6b16069c179cdb1);
+            
+
+            marker_37c95813873d497493537a2fe3016dfe.bindPopup(popup_30327371324d4c36967cb8c4d6d35d37);
+
+            
+        
+    
+
+            var marker_0fbf77a73bac46319dc4527578b11131 = L.marker(
+                [37.8027052,-122.4124234],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_346a8d81c9b04aa38c21f0d338bfd430 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0fbf77a73bac46319dc4527578b11131.setIcon(icon_346a8d81c9b04aa38c21f0d338bfd430);
+            
+    
+            var popup_d573aea71c494fbaaf45928c37f439bc = L.popup({maxWidth: '300'});
+
+            
+                var html_de53231598114259a4540a6e9930fcb4 = $('<div id="html_de53231598114259a4540a6e9930fcb4" style="width: 100.0%; height: 100.0%;">SF Rec North Beach<br><a href="http://sfrecpark.org/destination/joe-dimaggio-playground/north-beach-pool/">URL</a><br></div>')[0];
+                popup_d573aea71c494fbaaf45928c37f439bc.setContent(html_de53231598114259a4540a6e9930fcb4);
+            
+
+            marker_0fbf77a73bac46319dc4527578b11131.bindPopup(popup_d573aea71c494fbaaf45928c37f439bc);
+
+            
+        
+    
+
+            var marker_56a87a6137bb4f22b517be1c4833928f = L.marker(
+                [37.7500745,-122.4120347],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_0c1537fffb8d462584e69e6975b8347c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_56a87a6137bb4f22b517be1c4833928f.setIcon(icon_0c1537fffb8d462584e69e6975b8347c);
+            
+    
+            var popup_a105607213e24f308ddf3bc17de29009 = L.popup({maxWidth: '300'});
+
+            
+                var html_f427d7ec8faf4e0395123f36d9bffa54 = $('<div id="html_f427d7ec8faf4e0395123f36d9bffa54" style="width: 100.0%; height: 100.0%;">SF Rec Garfield Pool<br><a href="http://sfrecpark.org/destination/garfield-square/garfield-pool/">URL</a><br></div>')[0];
+                popup_a105607213e24f308ddf3bc17de29009.setContent(html_f427d7ec8faf4e0395123f36d9bffa54);
+            
+
+            marker_56a87a6137bb4f22b517be1c4833928f.bindPopup(popup_a105607213e24f308ddf3bc17de29009);
+
+            
+        
+    
+
+            var marker_37b92cfab6bb493294e50f9862461858 = L.marker(
+                [37.7254915,-122.3935752],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_9130ac60058f4e298175c9e78766b289 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_37b92cfab6bb493294e50f9862461858.setIcon(icon_9130ac60058f4e298175c9e78766b289);
+            
+    
+            var popup_68fe41635b6246cf8b4f7bbd1ba3dc4d = L.popup({maxWidth: '300'});
+
+            
+                var html_92a1854ee3e949c592b6dba30f30874c = $('<div id="html_92a1854ee3e949c592b6dba30f30874c" style="width: 100.0%; height: 100.0%;">SF Martin Luther King Pool<br><a href="http://sfrecpark.org/destination/bay-view-playground/martin-luther-king-jr-pool/">URL</a><br></div>')[0];
+                popup_68fe41635b6246cf8b4f7bbd1ba3dc4d.setContent(html_92a1854ee3e949c592b6dba30f30874c);
+            
+
+            marker_37b92cfab6bb493294e50f9862461858.bindPopup(popup_68fe41635b6246cf8b4f7bbd1ba3dc4d);
+
+            
+        
+    
+
+            var marker_829d352629ab4e19a2cd4a690ba270f4 = L.marker(
+                [37.7790784,-122.4582621],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_1cf07b193a164b4196c96b6e534fcf4b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_829d352629ab4e19a2cd4a690ba270f4.setIcon(icon_1cf07b193a164b4196c96b6e534fcf4b);
+            
+    
+            var popup_7b86f998a14f4c3f98f199365ba8daa5 = L.popup({maxWidth: '300'});
+
+            
+                var html_393306e327854b0193b8082d8e1839f9 = $('<div id="html_393306e327854b0193b8082d8e1839f9" style="width: 100.0%; height: 100.0%;">SF Rossi Pool<br><a href="http://sfrecpark.org/destination/angelo-j-rossi-playground/rossi-community-pool/">URL</a><br></div>')[0];
+                popup_7b86f998a14f4c3f98f199365ba8daa5.setContent(html_393306e327854b0193b8082d8e1839f9);
+            
+
+            marker_829d352629ab4e19a2cd4a690ba270f4.bindPopup(popup_7b86f998a14f4c3f98f199365ba8daa5);
+
+            
+        
+    
+
+            var marker_5f75f92e141d4990abef690f53fa59b4 = L.marker(
+                [37.7377925,-122.4758529],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_10681710657549fb890941dc503ede86 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5f75f92e141d4990abef690f53fa59b4.setIcon(icon_10681710657549fb890941dc503ede86);
+            
+    
+            var popup_0f307ebc32994c26989e2b87e01272ed = L.popup({maxWidth: '300'});
+
+            
+                var html_d93e9173cd254f3e802fdd0db283e671 = $('<div id="html_d93e9173cd254f3e802fdd0db283e671" style="width: 100.0%; height: 100.0%;">SF Sava Pool<br><a href="http://sfrecpark.org/destination/carl-larsen-park/sava-pool/">URL</a><br></div>')[0];
+                popup_0f307ebc32994c26989e2b87e01272ed.setContent(html_d93e9173cd254f3e802fdd0db283e671);
+            
+
+            marker_5f75f92e141d4990abef690f53fa59b4.bindPopup(popup_0f307ebc32994c26989e2b87e01272ed);
+
+            
+        
+    
+
+            var marker_e2da3d69c78542379cc72ccb551de5f9 = L.marker(
+                [37.7845604,-122.435445],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_c70a59c015a24d3aae3f9d9f2bb48cb6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e2da3d69c78542379cc72ccb551de5f9.setIcon(icon_c70a59c015a24d3aae3f9d9f2bb48cb6);
+            
+    
+            var popup_98f101e2185249de817dcf3895f640c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_6dc0ec85a8984550b2ba1185106f0fe5 = $('<div id="html_6dc0ec85a8984550b2ba1185106f0fe5" style="width: 100.0%; height: 100.0%;">SF Hamilton Pool<br><a href="http://sfrecpark.org/destination/hamilton-rec-center/hamilton-pool/">URL</a><br></div>')[0];
+                popup_98f101e2185249de817dcf3895f640c3.setContent(html_6dc0ec85a8984550b2ba1185106f0fe5);
+            
+
+            marker_e2da3d69c78542379cc72ccb551de5f9.bindPopup(popup_98f101e2185249de817dcf3895f640c3);
+
+            
+        
+    
+
+            var marker_649aa01bb4b944f998d1dda560a58d2a = L.marker(
+                [37.7261962,-122.4432667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_75855d84637e4728839368561bfb6762 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_649aa01bb4b944f998d1dda560a58d2a.setIcon(icon_75855d84637e4728839368561bfb6762);
+            
+    
+            var popup_1dae619093014b5fa0148bcb3f50a713 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a56b90dad62441abc71d69ff8d76c1b = $('<div id="html_1a56b90dad62441abc71d69ff8d76c1b" style="width: 100.0%; height: 100.0%;">SF Balboa Pool<br><a href="http://sfrecpark.org/destination/balboa-park/balboa-pool/">URL</a><br></div>')[0];
+                popup_1dae619093014b5fa0148bcb3f50a713.setContent(html_1a56b90dad62441abc71d69ff8d76c1b);
+            
+
+            marker_649aa01bb4b944f998d1dda560a58d2a.bindPopup(popup_1dae619093014b5fa0148bcb3f50a713);
+
+            
+        
+    
+
+            var marker_f2ec54371b1d454692fda4938b09b677 = L.marker(
+                [37.7594975,-122.4226561],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_62edd579e4fa4caa816acf4ab6f68177 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f2ec54371b1d454692fda4938b09b677.setIcon(icon_62edd579e4fa4caa816acf4ab6f68177);
+            
+    
+            var popup_1366e58863d043c4a30eef9d6dd6608b = L.popup({maxWidth: '300'});
+
+            
+                var html_ee075f9da6ce46cf82d4cffd87580f5d = $('<div id="html_ee075f9da6ce46cf82d4cffd87580f5d" style="width: 100.0%; height: 100.0%;">SF Mission Pool<br><a href="http://sfrecpark.org/destination/mission-playground/mission-community-pool/">URL</a><br></div>')[0];
+                popup_1366e58863d043c4a30eef9d6dd6608b.setContent(html_ee075f9da6ce46cf82d4cffd87580f5d);
+            
+
+            marker_f2ec54371b1d454692fda4938b09b677.bindPopup(popup_1366e58863d043c4a30eef9d6dd6608b);
+
+            
+        
+    
+
+            var marker_2d15f714a0a346ee9ef57be29c0e0196 = L.marker(
+                [37.800198,-122.454897],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_141a70a34a5049ee839443517e3281d6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2d15f714a0a346ee9ef57be29c0e0196.setIcon(icon_141a70a34a5049ee839443517e3281d6);
+            
+    
+            var popup_782b2501b69e44b681514c5ea4ccedd2 = L.popup({maxWidth: '300'});
+
+            
+                var html_00a74116161144f6a2d1403c19f711f9 = $('<div id="html_00a74116161144f6a2d1403c19f711f9" style="width: 100.0%; height: 100.0%;">YMCA Presidio<br><a href="https://www.ymcasf.org/locations/presidio-community-ymca">URL</a><br></div>')[0];
+                popup_782b2501b69e44b681514c5ea4ccedd2.setContent(html_00a74116161144f6a2d1403c19f711f9);
+            
+
+            marker_2d15f714a0a346ee9ef57be29c0e0196.bindPopup(popup_782b2501b69e44b681514c5ea4ccedd2);
+
+            
+        
+    
+
+            var marker_7d75cd001c054b28b83f6daa574b7144 = L.marker(
+                [37.792921,-122.392],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_4d9f0155272f466d9e1854c48b7d19f8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d75cd001c054b28b83f6daa574b7144.setIcon(icon_4d9f0155272f466d9e1854c48b7d19f8);
+            
+    
+            var popup_c3404106c68744679884153e0cade288 = L.popup({maxWidth: '300'});
+
+            
+                var html_1cf1f2bdf6a744ccaa58a3de9438bdc3 = $('<div id="html_1cf1f2bdf6a744ccaa58a3de9438bdc3" style="width: 100.0%; height: 100.0%;">YMCA Embarcadero<br><a href="https://www.ymcasf.org/locations/embarcadero-ymca">URL</a><br></div>')[0];
+                popup_c3404106c68744679884153e0cade288.setContent(html_1cf1f2bdf6a744ccaa58a3de9438bdc3);
+            
+
+            marker_7d75cd001c054b28b83f6daa574b7144.bindPopup(popup_c3404106c68744679884153e0cade288);
+
+            
+        
+    
+
+            var marker_8811012373864722a418eb2634a09d9c = L.marker(
+                [37.793486,-122.406977],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_169d4fc2c6ae4dd884f72a0680f2a70a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8811012373864722a418eb2634a09d9c.setIcon(icon_169d4fc2c6ae4dd884f72a0680f2a70a);
+            
+    
+            var popup_8eb1091c940c4595bda0e39b3ef660dc = L.popup({maxWidth: '300'});
+
+            
+                var html_d08fa2b5ee1f4b3ca661069392705300 = $('<div id="html_d08fa2b5ee1f4b3ca661069392705300" style="width: 100.0%; height: 100.0%;">YMCA China Town<br><a href="https://www.ymcasf.org/locations/chinatown-ymca">URL</a><br></div>')[0];
+                popup_8eb1091c940c4595bda0e39b3ef660dc.setContent(html_d08fa2b5ee1f4b3ca661069392705300);
+            
+
+            marker_8811012373864722a418eb2634a09d9c.bindPopup(popup_8eb1091c940c4595bda0e39b3ef660dc);
+
+            
+        
+    
+
+            var marker_e6a7ea074cc845a5a95c5564a0b6c92c = L.marker(
+                [37.807028,-122.423396],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_15d3ca5205e945d99c7beaa65ce09ffe);
+            
+    
+
+                var icon_56ff19aab5cd448caeb5bb0fa559ee58 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'yellow',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e6a7ea074cc845a5a95c5564a0b6c92c.setIcon(icon_56ff19aab5cd448caeb5bb0fa559ee58);
+            
+    
+            var popup_687698e78dc0452dafb77aba0a51f410 = L.popup({maxWidth: '300'});
+
+            
+                var html_d5f808ae3dae40dc835815cd6118c805 = $('<div id="html_d5f808ae3dae40dc835815cd6118c805" style="width: 100.0%; height: 100.0%;">Aquatics Park OWS<br><a href="http://www.ggtc.org/content.aspx?page_id=22&club_id=424851&module_id=102385">URL</a><br></div>')[0];
+                popup_687698e78dc0452dafb77aba0a51f410.setContent(html_d5f808ae3dae40dc835815cd6118c805);
+            
+
+            marker_e6a7ea074cc845a5a95c5564a0b6c92c.bindPopup(popup_687698e78dc0452dafb77aba0a51f410);
+
+            
+        
+</script>
